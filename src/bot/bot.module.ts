@@ -12,9 +12,7 @@ import { PdfService } from 'src/services/pdf.service';
       imports: [ConfigModule],
       useFactory: (configService: ConfigService) => {
         return {
-          token:
-            configService.get('BOT_TOKEN') ??
-            '8017273074:AAFNnPtn9vQ_ALU2LdtQ1fbkr_dq7g',
+          token: '8017273074:AAFNnPtn9vQ_ALU2LdtQ1fbkr_dq7g',
         };
       },
       inject: [ConfigService],
