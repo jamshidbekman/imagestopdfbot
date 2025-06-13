@@ -8,14 +8,8 @@ import { PdfService } from 'src/services/pdf.service';
 
 @Module({
   imports: [
-    TelegrafModule.forRootAsync({
-      imports: [ConfigModule],
-      useFactory: (configService: ConfigService) => {
-        return {
-          token: '8017273074:AAFNnPtn9vQ_ALU2LdtQ1fbkr_dq7g',
-        };
-      },
-      inject: [ConfigService],
+    TelegrafModule.forRoot({
+      token: '8017273074:AAFNnPtn9vQ_ALU2LdtQ1fbkr_dq7g3EDPw',
     }),
   ],
   providers: [BotUpdate, BotService, ImageService, PdfService],
